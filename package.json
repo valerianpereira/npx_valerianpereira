@@ -1,5 +1,5 @@
 {
-  "name": "valerianpereira",
+  "name": "@valerianpereira/valerianpereira",
   "version": "1.0.1",
   "description": "Business card utility from cli - built with NodeJS",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/valerianpereira/npx_valerianpereira.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Valerian Pereira <hello@valerianpereira.in> https://valerianpereira.in/",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/valerianpereira/npx_valerianpereira/issues"
