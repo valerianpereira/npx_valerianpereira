@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/valerianpereira/npx_valerianpereira/issues"
   },
-  "homepage": "https://github.com/valerianpereira/npx_valerianpereira#readme"
+  "homepage": "https://github.com/valerianpereira/npx_valerianpereira#readme",
+  "dependencies": {
+    "prettyjson": "^1.2.1"
+  }
 }

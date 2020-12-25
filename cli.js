@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log('doing business')
+const pkg = require('.')
+console.log(pkg())
+
