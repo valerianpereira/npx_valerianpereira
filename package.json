@@ -1,5 +1,5 @@
 {
-  "name": "@card/valerianpereira",
+  "name": "valerianpereira",
   "version": "1.0.3",
   "description": "Business card utility from cli - built with NodeJS",
   "main": "index.js",
