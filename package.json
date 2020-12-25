@@ -1,6 +1,6 @@
 {
   "name": "valerianpereira",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Business card utility from cli - built with NodeJS",
   "main": "index.js",
   "bin": "./cli.js",
