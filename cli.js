@@ -7,6 +7,7 @@ const chalk = require("chalk");
 const inquirer = require("inquirer");
 const clear = require("clear");
 const open = require("open");
+const qrcode = require('qrcode-terminal');
 const data = require('./lib/data')
 
 // Start fresh
@@ -44,6 +45,12 @@ const questions = [
     }
 ];
 
+// Generate the QR Code
+var qrCodeValue = '';
+qrcode.generate('https://valerianpereira.in', {small: true}, function (qrcode) {
+    qrCodeValue = qrcode
+});
+
 // Create the box items
 const me = boxen(
     [
@@ -61,13 +68,16 @@ const me = boxen(
         `${chalk.italic("Actively looking for new challenges and opportunities.")}`,
         `${chalk.italic("Just an email away when you want to connect with me.")}`,
         `${chalk.italic("Tech and Travel enthusiast hailing from Mumbai (India)")}`,
-        `${chalk.italic("Waiting to hear from you soon !!!")}`
+        `${chalk.italic("Waiting to hear from you soon !!!")}`,
+        ``,
+        `${qrCodeValue}`
     ].join("\n"),
     {
         margin: 1,
         float: 'center',
+        align: 'center',
         padding: 1,
-        borderStyle: "single",
+        borderStyle: "classic",
         borderColor: "yellow"
     }
 );
