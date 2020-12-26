@@ -11,3 +11,7 @@ npx valerianpereira
 
 # Reference
 Thanks to the [amazing article](https://studioelsa.se/blog/open-source-oss-npx-business-card) from @jackboberg and implementation from @anmol098
+
+# Published on NPM
+Published on NPM with the following name
+[valerianpereira](https://www.npmjs.com/package/valerianpereira)
