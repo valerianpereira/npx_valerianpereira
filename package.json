@@ -5,13 +5,24 @@
   "main": "index.js",
   "bin": "./cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm version major & npm publish --access=public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/valerianpereira/npx_valerianpereira.git"
   },
-  "keywords": [],
+  "keywords": [
+    "npx",
+    "npx card",
+    "card",
+    "npm",
+    "npm card",
+    "business card"
+    "cli",
+    "cli utility",
+    "terminal",
+  ],
   "author": "Valerian Pereira <hello@valerianpereira.in> https://valerianpereira.in/",
   "license": "ISC",
   "bugs": {
@@ -19,6 +30,10 @@
   },
   "homepage": "https://github.com/valerianpereira/npx_valerianpereira#readme",
   "dependencies": {
-    "prettyjson": "^1.2.1"
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "inquirer": "^7.3.3",
+    "open": "^7.3.0"
   }
 }
