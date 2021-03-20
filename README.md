@@ -6,7 +6,7 @@ Access the card from the CLI using the following command:
 npx valerianpereira
 ```
 
-# Results
+# Result
 ![image](images/npx_valerianpereira.png)
 
 # Reference
