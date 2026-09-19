@@ -11,6 +11,7 @@ const qrcode = require('qrcode-terminal');
 const data = require('./lib/data')
 
 // Start fresh
+// Add more fixes
 clear();
 
 const prompt = inquirer.createPromptModule();
