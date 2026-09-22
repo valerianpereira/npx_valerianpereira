@@ -11,7 +11,6 @@ const qrcode = require('qrcode-terminal');
 const data = require('./lib/data')
 
 // Start fresh
-// Add more fixes
 clear();
 
 const prompt = inquirer.createPromptModule();
@@ -25,8 +24,22 @@ const questions = [
             {
                 name: `Send me an ${chalk.green.bold("email")}?`,
                 value: () => {
-                    open("mailto:hello@valerianpereira.in");
+                    open(`mailto:${data.email}`);
                     console.log("\nSwoosh...I'll wait to hear from you\n");
+                }
+            },
+            {
+                name: `Check out my ${chalk.cyan.bold("website")} (SQL console + CV)?`,
+                value: () => {
+                    open("https://valerianpereira.in");
+                    console.log("\nTry `SELECT * FROM shipped;` while you are there\n");
+                }
+            },
+            {
+                name: `Browse my ${chalk.green.bold("open source")} work?`,
+                value: () => {
+                    open("https://github.com/valerianpereira?tab=repositories");
+                    console.log("\nStars are always welcome :)\n");
                 }
             },
             {
@@ -66,10 +79,7 @@ const me = boxen(
         ``,
         `${data.labelCard}  ${data.npx}`,
         ``,
-        `${chalk.italic("Actively looking for new challenges and opportunities.")}`,
-        `${chalk.italic("Just an email away when you want to connect with me.")}`,
-        `${chalk.italic("Tech and Travel enthusiast hailing from Mumbai (India)")}`,
-        `${chalk.italic("Waiting to hear from you soon !!!")}`,
+        ...data.bio.map(line => chalk.italic(line)),
         ``,
         `${qrCodeValue}`
     ].join("\n"),
