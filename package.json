@@ -2,7 +2,9 @@
   "name": "valerianpereira",
   "version": "2.1.0",
   "description": "Valerian Pereira's business card in your terminal - Head of Data Team at BookMyShow. Run `npx valerianpereira`.",
-  "bin": "./cli.js",
+  "bin": {
+    "valerianpereira": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pub": "npm version major & npm publish --access=public"
