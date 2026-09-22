@@ -1,6 +1,6 @@
 {
   "name": "valerianpereira",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Valerian Pereira's business card in your terminal - Head of Data Team at BookMyShow. Run `npx valerianpereira`.",
   "bin": "./cli.js",
   "scripts": {
